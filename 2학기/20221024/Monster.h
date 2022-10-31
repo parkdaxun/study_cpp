@@ -4,7 +4,7 @@
 #include <string>
 #include <cstdlib>
 #include <ctime>
-#include "Canvas.h"
+#include "Canvas.hpp"
 
 class Monster {
 protected:

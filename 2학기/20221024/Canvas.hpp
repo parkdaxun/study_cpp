@@ -2,41 +2,44 @@
 #define __CANVAS_H__
 
 #include <iostream>
-#define MAX_LINE 100
 #define DIM 40
 using namespace std;
 
 class Canvas {
 private:
-	char board[DIM][DIM];
-	int xMax, yMax;
+    char board[DIM][DIM];
+    int xMax, yMax;
 public:
-	Canvas(int width=10, int height=10): xMax(width), yMax(height) {
-		for(int y = 0 ; y < yMax ; y++)
-			for(int x = 0 ; x < xMax ; x++)
-				board[y][x] = ' ';
-	}
-	void draw(int x, int y, char val) {
-		if(x >= 0 && x < xMax && y >= 0 && y < yMax) {
-			board[y][x] = val;
-		}
-	}
-	void clear(char val = ' ') {
-		for(int y = 0 ; y < yMax ; y++)
-			for(int x = 0 ; x < xMax ; x++) {
-				draw(x, y, val);
-			}
-	}
-	void print(const char* title = "<My Canvas>") {
-		cout << title << endl;
-		for(int y = 0 ; y < yMax ; y++) {
-			for(int x = 0 ; x < xMax ; x++) {
-				cout << board[y][x];
-				}
-			cout << endl;
-		}
-		cout << endl;
-	}
+    Canvas(int xMax, int yMax) : xMax(xMax), yMax(yMax) {
+      for(int i = 0; i < yMax; i++) {
+        for(int j = 0; j < xMax; j++) {
+          board[i][j] = ' ';
+        }
+      }
+    }
+
+    void draw(int i, int j, char word) {
+      if(i >= 0 && i < xMax && j >= 0 && j < yMax) board[j][i] = word;
+    }
+
+    void print(const char* title = "<My Canvas>") {
+      cout << title << endl;
+      for(int i = 0; i < yMax; i++) {
+        for(int j = 0; j < xMax; j++) {
+          cout << board[i][j];
+        }
+        cout << endl;
+      }
+      cout << endl;
+    }
+
+    void clear(char val = ' ') {
+      for(int i = 0; i < yMax; i++) {
+        for(int j = 0; j < xMax; j++) {
+          draw(j, i, val);
+        }
+      }
+    }
 };
 
 #endif
