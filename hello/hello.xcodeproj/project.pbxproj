@@ -6,8 +6,12 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D2A1DB072921FB1B000BCA1A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2A1DB062921FB1B000BCA1A /* main.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		D221DAB428FD1B3900E65A81 /* CopyFiles */ = {
+		D2A1DB012921FB1B000BCA1A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -19,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D221DAB628FD1B3900E65A81 /* monsterworld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = monsterworld; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2A1DB0D2921FB80000BCA1A /* Game */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Game; path = ../Game; sourceTree = "<group>"; };
+		D2A1DB032921FB1B000BCA1A /* hello */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hello; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A1DB062921FB1B000BCA1A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D221DAB328FD1B3900E65A81 /* Frameworks */ = {
+		D2A1DB002921FB1B000BCA1A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,57 +38,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D221DAAD28FD1B3900E65A81 = {
+		D2A1DAFA2921FB1B000BCA1A = {
 			isa = PBXGroup;
 			children = (
-				D2A1DB0D2921FB80000BCA1A /* Game */,
-				D221DAB728FD1B3900E65A81 /* Products */,
+				D2A1DB052921FB1B000BCA1A /* hello */,
+				D2A1DB042921FB1B000BCA1A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D221DAB728FD1B3900E65A81 /* Products */ = {
+		D2A1DB042921FB1B000BCA1A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D221DAB628FD1B3900E65A81 /* monsterworld */,
+				D2A1DB032921FB1B000BCA1A /* hello */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D2A1DB052921FB1B000BCA1A /* hello */ = {
+			isa = PBXGroup;
+			children = (
+				D2A1DB062921FB1B000BCA1A /* main.cpp */,
+			);
+			path = hello;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D221DAB528FD1B3900E65A81 /* monsterworld */ = {
+		D2A1DB022921FB1B000BCA1A /* hello */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D221DABD28FD1B3900E65A81 /* Build configuration list for PBXNativeTarget "monsterworld" */;
+			buildConfigurationList = D2A1DB0A2921FB1B000BCA1A /* Build configuration list for PBXNativeTarget "hello" */;
 			buildPhases = (
-				D221DAB228FD1B3900E65A81 /* Sources */,
-				D221DAB328FD1B3900E65A81 /* Frameworks */,
-				D221DAB428FD1B3900E65A81 /* CopyFiles */,
+				D2A1DAFF2921FB1B000BCA1A /* Sources */,
+				D2A1DB002921FB1B000BCA1A /* Frameworks */,
+				D2A1DB012921FB1B000BCA1A /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = monsterworld;
-			productName = monsterworld;
-			productReference = D221DAB628FD1B3900E65A81 /* monsterworld */;
+			name = hello;
+			productName = hello;
+			productReference = D2A1DB032921FB1B000BCA1A /* hello */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D221DAAE28FD1B3900E65A81 /* Project object */ = {
+		D2A1DAFB2921FB1B000BCA1A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					D221DAB528FD1B3900E65A81 = {
+					D2A1DB022921FB1B000BCA1A = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = D221DAB128FD1B3900E65A81 /* Build configuration list for PBXProject "monsterworld" */;
+			buildConfigurationList = D2A1DAFE2921FB1B000BCA1A /* Build configuration list for PBXProject "hello" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -92,28 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = D221DAAD28FD1B3900E65A81;
-			productRefGroup = D221DAB728FD1B3900E65A81 /* Products */;
+			mainGroup = D2A1DAFA2921FB1B000BCA1A;
+			productRefGroup = D2A1DB042921FB1B000BCA1A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D221DAB528FD1B3900E65A81 /* monsterworld */,
+				D2A1DB022921FB1B000BCA1A /* hello */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D221DAB228FD1B3900E65A81 /* Sources */ = {
+		D2A1DAFF2921FB1B000BCA1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2A1DB072921FB1B000BCA1A /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D221DABB28FD1B3900E65A81 /* Debug */ = {
+		D2A1DB082921FB1B000BCA1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -171,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		D221DABC28FD1B3900E65A81 /* Release */ = {
+		D2A1DB092921FB1B000BCA1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -222,7 +235,7 @@
 			};
 			name = Release;
 		};
-		D221DABE28FD1B3900E65A81 /* Debug */ = {
+		D2A1DB0B2921FB1B000BCA1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -232,7 +245,7 @@
 			};
 			name = Debug;
 		};
-		D221DABF28FD1B3900E65A81 /* Release */ = {
+		D2A1DB0C2921FB1B000BCA1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -245,25 +258,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D221DAB128FD1B3900E65A81 /* Build configuration list for PBXProject "monsterworld" */ = {
+		D2A1DAFE2921FB1B000BCA1A /* Build configuration list for PBXProject "hello" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D221DABB28FD1B3900E65A81 /* Debug */,
-				D221DABC28FD1B3900E65A81 /* Release */,
+				D2A1DB082921FB1B000BCA1A /* Debug */,
+				D2A1DB092921FB1B000BCA1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D221DABD28FD1B3900E65A81 /* Build configuration list for PBXNativeTarget "monsterworld" */ = {
+		D2A1DB0A2921FB1B000BCA1A /* Build configuration list for PBXNativeTarget "hello" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D221DABE28FD1B3900E65A81 /* Debug */,
-				D221DABF28FD1B3900E65A81 /* Release */,
+				D2A1DB0B2921FB1B000BCA1A /* Debug */,
+				D2A1DB0C2921FB1B000BCA1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D221DAAE28FD1B3900E65A81 /* Project object */;
+	rootObject = D2A1DAFB2921FB1B000BCA1A /* Project object */;
 }

@@ -6,8 +6,12 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D2A1DB282921FC2D000BCA1A /* MonsterWorldGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2A1DB222921FC2D000BCA1A /* MonsterWorldGame.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		D221DAB428FD1B3900E65A81 /* CopyFiles */ = {
+		D2A1DB152921FC1F000BCA1A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -19,12 +23,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D221DAB628FD1B3900E65A81 /* monsterworld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = monsterworld; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2A1DB0D2921FB80000BCA1A /* Game */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Game; path = ../Game; sourceTree = "<group>"; };
+		D2A1DB172921FC1F000BCA1A /* Game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Game; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A1DB222921FC2D000BCA1A /* MonsterWorldGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MonsterWorldGame.cpp; path = ../../../Game/MonsterWorldGame.cpp; sourceTree = "<group>"; };
+		D2A1DB232921FC2D000BCA1A /* Canvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Canvas.h; path = ../../../Game/Canvas.h; sourceTree = "<group>"; };
+		D2A1DB242921FC2D000BCA1A /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Human.h; path = ../../../Game/Human.h; sourceTree = "<group>"; };
+		D2A1DB252921FC2D000BCA1A /* Input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Input.h; path = ../../../Game/Input.h; sourceTree = "<group>"; };
+		D2A1DB262921FC2D000BCA1A /* MonsterWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MonsterWorld.h; path = ../../../Game/MonsterWorld.h; sourceTree = "<group>"; };
+		D2A1DB272921FC2D000BCA1A /* VariousMonsters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VariousMonsters.h; path = ../../../Game/VariousMonsters.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D221DAB328FD1B3900E65A81 /* Frameworks */ = {
+		D2A1DB142921FC1F000BCA1A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,57 +43,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D221DAAD28FD1B3900E65A81 = {
+		D2A1DB0E2921FC1F000BCA1A = {
 			isa = PBXGroup;
 			children = (
-				D2A1DB0D2921FB80000BCA1A /* Game */,
-				D221DAB728FD1B3900E65A81 /* Products */,
+				D2A1DB192921FC1F000BCA1A /* Game */,
+				D2A1DB182921FC1F000BCA1A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D221DAB728FD1B3900E65A81 /* Products */ = {
+		D2A1DB182921FC1F000BCA1A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D221DAB628FD1B3900E65A81 /* monsterworld */,
+				D2A1DB172921FC1F000BCA1A /* Game */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D2A1DB192921FC1F000BCA1A /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				D2A1DB232921FC2D000BCA1A /* Canvas.h */,
+				D2A1DB242921FC2D000BCA1A /* Human.h */,
+				D2A1DB252921FC2D000BCA1A /* Input.h */,
+				D2A1DB262921FC2D000BCA1A /* MonsterWorld.h */,
+				D2A1DB222921FC2D000BCA1A /* MonsterWorldGame.cpp */,
+				D2A1DB272921FC2D000BCA1A /* VariousMonsters.h */,
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D221DAB528FD1B3900E65A81 /* monsterworld */ = {
+		D2A1DB162921FC1F000BCA1A /* Game */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D221DABD28FD1B3900E65A81 /* Build configuration list for PBXNativeTarget "monsterworld" */;
+			buildConfigurationList = D2A1DB1E2921FC1F000BCA1A /* Build configuration list for PBXNativeTarget "Game" */;
 			buildPhases = (
-				D221DAB228FD1B3900E65A81 /* Sources */,
-				D221DAB328FD1B3900E65A81 /* Frameworks */,
-				D221DAB428FD1B3900E65A81 /* CopyFiles */,
+				D2A1DB132921FC1F000BCA1A /* Sources */,
+				D2A1DB142921FC1F000BCA1A /* Frameworks */,
+				D2A1DB152921FC1F000BCA1A /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = monsterworld;
-			productName = monsterworld;
-			productReference = D221DAB628FD1B3900E65A81 /* monsterworld */;
+			name = Game;
+			productName = Game;
+			productReference = D2A1DB172921FC1F000BCA1A /* Game */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D221DAAE28FD1B3900E65A81 /* Project object */ = {
+		D2A1DB0F2921FC1F000BCA1A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					D221DAB528FD1B3900E65A81 = {
+					D2A1DB162921FC1F000BCA1A = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = D221DAB128FD1B3900E65A81 /* Build configuration list for PBXProject "monsterworld" */;
+			buildConfigurationList = D2A1DB122921FC1F000BCA1A /* Build configuration list for PBXProject "Game" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -92,28 +114,29 @@
 				en,
 				Base,
 			);
-			mainGroup = D221DAAD28FD1B3900E65A81;
-			productRefGroup = D221DAB728FD1B3900E65A81 /* Products */;
+			mainGroup = D2A1DB0E2921FC1F000BCA1A;
+			productRefGroup = D2A1DB182921FC1F000BCA1A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D221DAB528FD1B3900E65A81 /* monsterworld */,
+				D2A1DB162921FC1F000BCA1A /* Game */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D221DAB228FD1B3900E65A81 /* Sources */ = {
+		D2A1DB132921FC1F000BCA1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2A1DB282921FC2D000BCA1A /* MonsterWorldGame.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D221DABB28FD1B3900E65A81 /* Debug */ = {
+		D2A1DB1C2921FC1F000BCA1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -171,7 +194,7 @@
 			};
 			name = Debug;
 		};
-		D221DABC28FD1B3900E65A81 /* Release */ = {
+		D2A1DB1D2921FC1F000BCA1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -222,7 +245,7 @@
 			};
 			name = Release;
 		};
-		D221DABE28FD1B3900E65A81 /* Debug */ = {
+		D2A1DB1F2921FC1F000BCA1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -232,7 +255,7 @@
 			};
 			name = Debug;
 		};
-		D221DABF28FD1B3900E65A81 /* Release */ = {
+		D2A1DB202921FC1F000BCA1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -245,25 +268,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D221DAB128FD1B3900E65A81 /* Build configuration list for PBXProject "monsterworld" */ = {
+		D2A1DB122921FC1F000BCA1A /* Build configuration list for PBXProject "Game" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D221DABB28FD1B3900E65A81 /* Debug */,
-				D221DABC28FD1B3900E65A81 /* Release */,
+				D2A1DB1C2921FC1F000BCA1A /* Debug */,
+				D2A1DB1D2921FC1F000BCA1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D221DABD28FD1B3900E65A81 /* Build configuration list for PBXNativeTarget "monsterworld" */ = {
+		D2A1DB1E2921FC1F000BCA1A /* Build configuration list for PBXNativeTarget "Game" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D221DABE28FD1B3900E65A81 /* Debug */,
-				D221DABF28FD1B3900E65A81 /* Release */,
+				D2A1DB1F2921FC1F000BCA1A /* Debug */,
+				D2A1DB202921FC1F000BCA1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D221DAAE28FD1B3900E65A81 /* Project object */;
+	rootObject = D2A1DB0F2921FC1F000BCA1A /* Project object */;
 }
