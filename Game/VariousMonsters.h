@@ -7,7 +7,7 @@ class Zombie: public Monster {
   public:
     Zombie(string name="����", char icon='!', int x=0, int y=0): Monster(name, icon, x, y) {}
 
-    void move(int map[DIM][DIM], int xMax, int yMax) {
+    void move(int** map, int xMax, int yMax) {
       srand((unsigned)time(NULL));
       switch(rand() % 8) {
         case 0: y--; break;
@@ -32,7 +32,7 @@ class Vampire: public Monster {
   public:
     Vampire(string name="�����̾�", char icon='@', int x=0, int y=0): Monster(name, icon, x, y) {}
 
-    void move(int map[DIM][DIM], int xMax, int yMax) {
+    void move(int** map, int xMax, int yMax) {
       srand((unsigned)time(NULL));
       switch(rand() % 4) {
         case 0: y--; break;
@@ -53,7 +53,7 @@ class PowerZombie: public Monster {
   public:
     PowerZombie(string name="���� ����", char icon='*', int x=0, int y=0): Monster(name, icon, x, y) {}
 
-    void move(int map[DIM][DIM], int xMax, int yMax) {
+    void move(int** map, int xMax, int yMax) {
       srand((unsigned)time(NULL));
       switch(rand() % 8) {
         case 0: y--; y--; break;

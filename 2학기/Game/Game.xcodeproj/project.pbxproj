@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D223352E29220B2D00D83891 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D223352C29220B2D00D83891 /* Matrix.cpp */; };
 		D2A1DB282921FC2D000BCA1A /* MonsterWorldGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2A1DB222921FC2D000BCA1A /* MonsterWorldGame.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D223352C29220B2D00D83891 /* Matrix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix.cpp; sourceTree = "<group>"; };
+		D223352D29220B2D00D83891 /* Matrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Matrix.hpp; sourceTree = "<group>"; };
 		D2A1DB172921FC1F000BCA1A /* Game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Game; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A1DB222921FC2D000BCA1A /* MonsterWorldGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MonsterWorldGame.cpp; path = ../../../Game/MonsterWorldGame.cpp; sourceTree = "<group>"; };
 		D2A1DB232921FC2D000BCA1A /* Canvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Canvas.h; path = ../../../Game/Canvas.h; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 				D2A1DB262921FC2D000BCA1A /* MonsterWorld.h */,
 				D2A1DB222921FC2D000BCA1A /* MonsterWorldGame.cpp */,
 				D2A1DB272921FC2D000BCA1A /* VariousMonsters.h */,
+				D223352C29220B2D00D83891 /* Matrix.cpp */,
+				D223352D29220B2D00D83891 /* Matrix.hpp */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D223352E29220B2D00D83891 /* Matrix.cpp in Sources */,
 				D2A1DB282921FC2D000BCA1A /* MonsterWorldGame.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

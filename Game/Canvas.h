@@ -2,35 +2,29 @@
 #define __CANVAS_H__
 
 #include <iostream>
+#include "Matrix.h"
 #define DIM 40
 using namespace std;
 
 class Canvas {
 private:
-    char board[DIM][DIM];
+    Matrix<char> map;
     int xMax, yMax;
 public:
-    Canvas(int xMax, int yMax) : xMax(xMax), yMax(yMax) {
+    Canvas(int xMax, int yMax) : xMax(xMax), yMax(yMax), map(xMax, yMax) {
       for(int i = 0; i < yMax; i++) {
         for(int j = 0; j < xMax; j++) {
-          board[i][j] = ' ';
+          map.elem(i, j) = ' ';
         }
       }
     }
 
     void draw(int i, int j, char word) {
-      if(i >= 0 && i < xMax && j >= 0 && j < yMax) board[j][i] = word;
+      if(i >= 0 && i < xMax && j >= 0 && j < yMax) map.elem(j, i) = word;
     }
 
     void print(const char* title = "<My Canvas>") {
-      cout << title << endl;
-      for(int i = 0; i < yMax; i++) {
-        for(int j = 0; j < xMax; j++) {
-          cout << board[i][j];
-        }
-        cout << endl;
-      }
-      cout << endl;
+      map.print();
     }
 
     void clear(char val = ' ') {
